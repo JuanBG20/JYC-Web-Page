@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- KeyWords -->
+    <meta name="keywords" content="Impresion 3D, Corte Laser, CNC, Madera, Plastico, J&C, Catalogo, Pedidos, Personalizado">
+    <!-- Description -->
+    <meta name="description" content="Visita nuestro amplio catálogo de productos de plastico y madera hechos con impresoras 3D y pantografos laser">
+    <!-- Author -->
+    <meta name="author" content="Juan Bautista Galvan">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- Title -->
+    <title>J&C Impresiones 3D</title>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="cuboLogo" loading="lazy" src="/img/cuboLogo.png" alt="Logo">
+                J&C Impresiones 3D
+            </a>
+
+            <button id="btnNav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#prPlastico">Plástico</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#prMadera">Madera</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#prPersonalizados">Personalizados</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contactSection">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <button id="btnLupa" class="nav-link btn btn-link"><i class="bi bi-search"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cuadro de Busqueda -->
+    <div class="cuadroBusqueda">
+        <input id="buscador" type="text" name="buscador" placeholder="Buscar">
+        <button id="btnBuscador">&times;</button>
+    </div>
+
+    <!-- Boton Flotante WhatsApp -->
+    <span class="floatingWhatsApp">
+        <a href="https://wa.me/542364509648" target="_blank">
+            <i class="bi bi-whatsapp bg-success p-3 px-4 fs-4 rounded-5"></i>
+        </a>
+    </span>
+
+    <!-- Zoom de Imagen -->
+    <div id="overlay" class="overlay">
+        <div class="contenedorImg">
+            <button id="btnCerrar">&times;</button>
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <span id="modals"> <!-- Modal Productos --> </span>
+    
+    <main>
+        <!-- Titulo -->
+        <section class="container-lg">
+            <div class="row">
+                <h1 class="col-12 text-light text-center mt-5">Nuestros productos</h1>
+            </div>
+        </section>
+
+        <br>
+
+        <!-- Productos Plasticos -->
+        <section class="container-lg">
+            <div class="row">
+                <h2 class="col-12 text-primary text-center" id="prPlastico">Productos hechos en plástico</h2>
+            </div>
+
+            <div class="row">
+                <h3 id="llaveros" class="col-12 text-light mt-5 producto">Llaveros</h3>
+            </div>
+
+            <div id="lRow1"> <!-- Llaveros JS Fila 1 --> </div>
+
+            <div id="lRow2"> <!-- Llaveros JS Fila 2 --> </div>
+
+            <div id="lRow3"> <!-- Llaveros JS Fila 3 --> </div>
+
+            <div id="lRow4"> <!-- Llaveros JS Fila 4 --> </div>
+
+            <div class="row">
+                <h3 id="mates" class="col-12 text-light mt-5 producto">Mates</h3>
+            </div>
+
+            <div id="mRow1"> <!-- Mates JS Fila 1 --> </div>
+
+            <div class="row">
+                <h3 id="muñecos" class="col-12 text-light mt-5 producto">Muñequitos Flexibles</h3>
+            </div>
+
+            <div id="mfRow1"> <!-- Muñecos Flexibles Fila 1 --> </div>
+
+            <div id="mfRow2"> <!-- Muñecos Flexibles Fila 2 --> </div>
+
+            <div class="row">
+                <h3 id="soportes" class="col-12 text-light mt-5 producto">Soportes para Celulares</h3>
+            </div>
+
+            <div id="scRow1"> <!-- Soportes para Celulares Fila 1 --> </div>
+        </section>
+
+        <br>
+        <hr class="text-light">
+        <br>
+
+        <!-- Productos Madera -->
+        <section class="container-lg">
+            <div class="row">
+                <h2 class="col-12 text-primary text-center" id="prMadera">Productos hechos en madera</h2>
+            </div>
+
+            <div class="row">
+                <h3 id="cuadros" class="col-12 text-light mt-5 producto">Cuadros</h3>
+            </div>
+
+            <div id="cuaRow1"> <!-- Cuadros Fila 1 --> </div>
+
+            <div id="cuaRow2"> <!-- Cuadros Fila 2 --> </div>
+
+            <div class="row">
+                <h3 id="juegos" class="col-12 text-light mt-5 producto">Juegos</h3>
+            </div>
+
+            <div id="jRow1"> <!-- Juegos Fila 1 --> </div>
+
+            <div id="jRow2"> <!-- Juegos Fila 2 --> </div>
+
+            <div class="row">
+                <h3 id="letNum" class="col-12 text-light mt-5 producto">Letras y Números</h3>
+            </div>
+            
+            <div id="lnRow1"> <!-- Letras y Numeros Fila 1 --> </div>
+
+            <div class="row">
+                <h3 id="navidad" class="col-12 text-light mt-5 producto">Navidad</h3>
+            </div>
+
+            <div id="navRow1"> <!-- Navidad Fila 1 --> </div>
+        </section>
+
+        <br>
+        <hr class="text-light">
+        <br>
+
+        <section class="container-lg">
+            <div class="row">
+                <h2 class="col-12 text-primary text-center" id="prPersonalizados">¿No encontrás lo que buscás?</h2>
+            </div>
+
+            <br>
+
+            <div class="row text-light text-center">
+                <p class="col-12">No te preocupes, realizá tu pedido a través de nuestras redes o enviando un WhatsApp a nuestro número.</p>
+                <p class="col-12">Te contestaremos lo antes posible.</p>
+
+                <br>
+
+                <a href="index.html#contactSection">
+                    <button class="btn btn-outline-primary" role="button">
+                        <i class="bi bi-person-circle me-1"></i>
+                        Contacto
+                    </button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer class="container-fluid p-3 border-top">
+        <div class="row">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center text-light">
+                <div>
+                    <h5>Seguinos</h5>
+                </div>
+
+                <br>
+
+                <div>
+                    <i class="bi bi-instagram me-1"></i>
+                    <a class="link-light linkRedes" target="_blank" href="https://www.instagram.com/jyc_impresiones3d/">Instagram</a>
+                </div>
+                <div>
+                    <i class="bi bi-facebook me-1"></i>
+                    <a class="link-light linkRedes" target="_blank" href="https://www.facebook.com/jyc.plasticos3d">Facebook</a>
+                </div>
+                <div>
+                    <i class="bi bi-whatsapp me-1"></i>
+                    <a class="link-light linkRedes" target="_blank" href="https://wa.me/542364509648">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-12 text-secondary text-center">
+                Desarrollado por Juan Bautista Galván
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JS -->
+    <script src="js/crearProductos.js"></script>
+    <script src="js/zoomImg.js"></script>
+    <script src="js/buscador.js"></script>
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Facebook Verification -->
+    <meta name="facebook-domain-verification" content="cgqq410dmorvxv3xukst0332loi76o" />
+
+    <!-- KeyWords -->
+    <meta name="keywords" content="Impresion 3D, Corte Laser, CNC, Madera, Plastico, J&C, Catalogo, Pedidos, Personalizado">
+    <!-- Description -->
+    <meta name="description" content="Visita nuestro amplio catálogo de productos de plastico y madera hechos con impresoras 3D y pantografos laser">
+    <!-- Author -->
+    <meta name="author" content="Juan Bautista Galvan">
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- Title -->
+    <title>J&C Impresiones 3D</title>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="cuboLogo" loading="lazy" src="/img/cuboLogo.png" alt="Logo J&C">
+                J&C Impresiones 3D
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="productos.html">Plástico</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="productos.html#prMadera">Madera</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="productos.html#prPersonalizados">Personalizados</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactSection">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Boton Flotante WhatsApp -->
+    <span class="floatingWhatsApp">
+        <a href="https://wa.me/542364509648" target="_blank">
+            <i class="bi bi-whatsapp bg-success p-3 px-4 fs-4 rounded-5"></i>
+        </a>
+    </span>
+
+    <!-- Zoom de Imagen -->
+    <div id="overlay" class="overlay">
+        <div class="contenedorImg">
+            <button id="btnCerrar">&times;</button>
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <main>
+        <!-- Banner -->
+        <!-- <section>
+            <div id="bannerInicio" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#bannerInicio" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#bannerInicio" data-bs-slide-to="1" ></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 imgBanner" src="img/cuboLogo.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 imgBanner" src="img/cuboLogo.png" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#bannerInicio" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#bannerInicio" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section> -->
+
+        <!-- Muestra de Productos -->
+        <section class="container-lg">
+            <div class="row">
+                <h1 class="col-12 text-light text-center mt-5">Descubrí nuestros productos</h1>
+            </div>
+            
+            <br>
+
+            <!-- Productos 3D -->
+            <div class="row d-flex justify-content-evenly quitBorder">
+                <div class="col-sm-10 col-md-5 d-flex align-items-center tarjetaPr mt-5 p-5 border rounded">
+                    <div class="col-6">
+                        <div class="d-flex col-12 justify-content-center align-items-center">
+                            <img class="imgPr" src="img/productos/mates/river.jpg" loading="lazy" alt="J&C Mate River">
+                        </div>
+                    </div> 
+                    <div class="col-6">
+                        <div class="d-flex col-12 flex-column justify-content-center align-items-center">
+                            <h3 class="text-light">Mates</h3>
+                            <br>
+                            <a href="productos.html#mates">
+                                <button class="btn btn-outline-primary" role="button">
+                                    <i class="bi bi-arrow-right-square me-1"></i>
+                                    Conocé más
+                                </button>
+                            </a>
+                        </div>
+                    </div>                   
+                </div>
+                
+                <div class="col-sm-10 col-md-5 d-flex align-items-center tarjetaPr mt-5 p-5 border rounded">
+                    <div class="col-6">
+                        <div class="d-flex col-12 justify-content-center align-items-center">
+                            <img class="imgPr" src="img/productos/llaveros/spiderman.jpg" loading="lazy" alt="J&C Llavero SpiderMan">
+                        </div>
+                    </div> 
+                    <div class="col-6">
+                        <div class="d-flex col-12 flex-column justify-content-center align-items-center">
+                            <h3 class="text-light">Llaveros</h3>
+                            <br>
+                            <a href="productos.html#llaveros">
+                                <button class="btn btn-outline-primary" role="button">
+                                    <i class="bi bi-arrow-right-square me-1"></i>
+                                    Conocé más
+                                </button>
+                            </a>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+
+            <!-- Productos CNC -->
+            <div class="row d-flex justify-content-evenly quitBorder">
+                <div class="col-sm-10 col-md-5 d-flex align-items-center tarjetaPr mt-5 p-5 border rounded">
+                    <div class="col-6">
+                        <div class="d-flex col-12 justify-content-center align-items-center">
+                            <img class="imgPr" src="img/productos/cuadros/tripticoMapamundi.jpg" loading="lazy" alt="J&C Mapamundi Triptico">
+                        </div>
+                    </div> 
+                    <div class="col-6">
+                        <div class="d-flex col-12 flex-column justify-content-center align-items-center">
+                            <h3 class="text-light">Cuadros</h3>
+                            <br>
+                            <a href="productos.html#cuadros">
+                                <button class="btn btn-outline-primary" role="button">
+                                    <i class="bi bi-arrow-right-square me-1"></i>
+                                    Conocé más
+                                </button>
+                            </a>
+                        </div>
+                    </div>                   
+                </div>
+                
+                <div class="col-sm-10 col-md-5 d-flex align-items-center tarjetaPr mt-5 p-5 border rounded">
+                    <div class="col-6">
+                        <div class="d-flex col-12 justify-content-center align-items-center">
+                            <img class="imgPr" src="img/productos/juegos/rompecabezasLeon.jpg" loading="lazy" alt="J&C Rompecabezas Leon">
+                        </div>
+                    </div> 
+                    <div class="col-6">
+                        <div class="d-flex col-12 flex-column justify-content-center align-items-center">
+                            <h3 class="text-light">Juegos</h3>
+                            <br>
+                            <a href="productos.html#juegos">
+                                <button class="btn btn-outline-primary" role="button">
+                                    <i class="bi bi-arrow-right-square me-1"></i>
+                                    Conocé más
+                                </button>
+                            </a>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Extras -->
+            <div class="row mt-3">
+                <a class="link-primary" href="productos.html">
+                    <i class="bi bi-arrow-right me-1"></i>
+                    Ver todos los productos
+                </a>
+            </div>
+
+            <div class="row mt-3">
+                <a class="link-primary" href="productos.html#prPersonalizados">
+                    <i class="bi bi-arrow-right me-1"></i>
+                    Realizar un encargo personalizado
+                </a>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="container-lg mt-5 p-1 border-top" id="contactSection">
+            <div class="row">
+                <div class="col-md-12 col-lg-7 d-flex maps">
+                    <iframe class="mapSm" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13197.910700348879!2d-61.35184132374268!3d-34.210819713034105!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1665533147770!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="mapLg" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13198.049642763368!2d-61.3651022!3d-34.2099325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd989b7ebb3d0e71d!2sCotillon%20Bichito%20De%20Luz!5e0!3m2!1ses-419!2sar!4v1665534135336!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-md-12 col-lg-5 text-center text-light">
+                    <h1 class="titleContact">Sobre nosotros</h1>
+                    
+                    <br>
+
+                    <h4>Dirección: </h4>
+                    <p>Tucumán 199, Arribeños (B)</p>
+
+                    <h4>Correo Electrónico: </h4>
+                    <p>jyc.plasticos3d@gmail.com</p>
+                    <a href="enviarCorreo.html" target="_blank"><button class="btn btn-outline-primary mb-2" type="button">¡Escribinos!</button></a>
+
+                    <h4>WhatsApp: </h4>
+                    <p>2364509648</p>
+
+                    <h4>Nuestras Redes: </h4>
+                    <p>Facebook: J&C Impresiones 3D</p>
+                    <p>Instagram: @jyc_impresiones3d</p>
+                </div>
+            </div>  
+        </section>
+    </main>
+
+    <hr>
+
+    <footer class="container-fluid p-3 border-top">
+        <div class="row">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center text-light">
+                <div>
+                    <h5>Seguinos</h5>
+                </div>
+
+                <br>
+
+                <div>
+                    <i class="bi bi-instagram me-1"></i>
+                    <a class="link-light linkRedes" target="_blank" href="https://www.instagram.com/jyc_impresiones3d/">Instagram</a>
+                </div>
+                <div>
+                    <i class="bi bi-facebook me-1"></i>
+                    <a class="link-light linkRedes" target="_blank" href="https://www.facebook.com/jyc.plasticos3d">Facebook</a>
+                </div>
+                <div>
+                    <i class="bi bi-whatsapp me-1"></i>
+                    <a class="link-light linkRedes" target="_blank" href="https://wa.me/542364509648">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-12 text-secondary text-center">
+                Desarrollado por Juan Bautista Galván
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JS -->
+    <script src="js/zoomImg.js"></script>
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>
